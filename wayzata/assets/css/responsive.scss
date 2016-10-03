@@ -6,13 +6,271 @@
 
 
 @media (max-width: 992px) {
-  
+    .sec-2 {
+        .media-list {
+            height: auto;
+
+            .media-left {
+                img {
+                    height: auto;
+                }
+            }
+
+            .media-body {
+                width: 50%;
+                padding: 14px 10px;
+
+                h4 {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .sec-3 {
+        background-image: none;
+        height: auto;
+
+        .row {
+            .injectable-services-1 {
+                height: 400px;
+                background-repeat: no-repeat;
+                background-color: green;
+                background-size: 115% 100%;
+                background-color: $shade-1;
+                background-image: url('../images/skin-care.jpg');
+
+                .inject {
+                    visibility: hidden;
+                }
+            }
+
+            .injectable-services-2 {
+                text-align: center;
+                height: auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+                .inject {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .sec-4 {
+        height: auto;
+
+        .row {
+            .injectable-services-1 {
+                .inject {
+                    display: none;
+                }
+            }
+
+            .injectable-services-2 {
+                text-align: center;
+                background-color: $shade-1;
+
+                .inject {
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+    .sec-5 {
+        background-image: none;
+        height: auto;
+
+        .row {
+            .injectable-services-1 {
+                padding-right: 0px;
+                height: 400px;
+                padding-right: 0px;
+                background-repeat: no-repeat;
+                background-color: green;
+                background-size: 115% 100%;
+                background-color: $shade-1;
+                background-image: url('../images/Dollarphotoclub.jpg');
+
+                .inject {
+                    visibility: hidden;
+                }
+            }
+
+            .injectable-services-2 {
+                text-align: center;
+                height: auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+                .inject {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .sec-6 {
+        height: auto;
+
+        .row {
+            .injectable-services-1 {
+                .inject {
+                    display: none;
+                }
+            }
+
+            .injectable-services-2 {
+                text-align: center;
+                background-color: $shade-1;
+
+                .inject {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .sec-10 {
+        display: none;
+    }
 }
 
 
 @media (max-width: 768px) {
-   
-    #myCarousel{
- margin-top:0px;
-}
+
+    #myCarousel {
+        margin-top: 0px;
+    }
+
+    #main-manu {
+        position: absolute;
+        z-index: 1;
+    }
+
+    #jssor_1 {
+        top: 50px;
+        margin: 0px;
+    }
+
+    .sec-1 {
+        margin-top: 50px;
+    }
+
+    .sec-3 {
+        background-image: none;
+        height: auto;
+
+        .row {
+            .injectable-services-1 {
+                height: 400px;
+                background-repeat: no-repeat;
+                background-color: green;
+                background-size: 115% 100%;
+                background-color: $shade-1;
+                background-image: url('../images/skin-care.jpg');
+
+                .inject {
+                    visibility: hidden;
+                }
+            }
+
+            .injectable-services-2 {
+                text-align: center;
+                height: auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+                .inject {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .sec-4 {
+        height: auto;
+
+        .row {
+            .injectable-services-1 {
+                .inject {
+                    display: none;
+                }
+            }
+
+            .injectable-services-2 {
+                text-align: center;
+                background-color: $shade-1;
+
+                .inject {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .sec-5 {
+        background-image: none;
+        height: auto;
+
+        .row {
+            .injectable-services-1 {
+                height: 400px;
+                padding-right: 0px;
+                background-repeat: no-repeat;
+                background-color: green;
+                background-size: 115% 100%;
+                background-color: $shade-1;
+                background-image: url('../images/Dollarphotoclub.jpg');
+
+                .inject {
+                    visibility: hidden;
+                }
+            }
+
+            .injectable-services-2 {
+                text-align: center;
+                height: auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+                .inject {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .sec-6 {
+        height: auto;
+        background-image: none;
+
+        .row {
+            .injectable-services-1 {
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-image: url('../images/facial.jpg');
+
+                .inject {
+                    display: none;
+                }
+            }
+
+            .injectable-services-2 {
+                text-align: center;
+                background-color: $shade-1;
+
+                .inject {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .sec-10 {
+        display: none;
+    }
 }

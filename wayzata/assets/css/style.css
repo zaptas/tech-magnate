@@ -10,8 +10,6 @@
   clear: both;
   background: #FFFFFF;
   display: flex;
-  position: absolute;
-  z-index: 10;
   clear: both; }
   #main-manu .menu-active, #main-manu .menu-wrapper .menu-container .Li a:hover {
     /*background-color: $main-menu-active-backgruond-color !important;
@@ -48,20 +46,20 @@
     transform: translateY(-50%); }
     #main-manu .menu-wrapper .menu-container {
       min-width: 600px;
-      max-width: 700px;
+      max-width: 800px;
       width: 100%;
       height: inherit;
       background-color: #FFFFFF;
-      display: flex;
-      box-sizing: border-box;
-      float: right; }
+      float: right;
+      box-sizing: border-box; }
       #main-manu .menu-wrapper .menu-container .Li {
         background-color: #FFFFFF;
         box-sizing: border-box;
         /*border-left: 1px solid black;*/
         line-height: 30px;
         padding-left: 2.5%;
-        padding-right: 2.5%; }
+        padding-right: 2.5%;
+        float: left; }
         #main-manu .menu-wrapper .menu-container .Li a {
           display: block;
           text-decoration: none;
@@ -81,7 +79,8 @@
     clear: both;
     width: 100%; }
     #main-manu .small-menu .small-menu-logo {
-      flex-grow: 1; }
+      flex-grow: 1;
+      background-color: #F5F5F5; }
       #main-manu .small-menu .small-menu-logo img {
         min-width: 50px;
         max-width: 70px;
@@ -94,7 +93,9 @@
       line-height: 50px;
       font-size: 35px;
       color: #5DC5C5;
-      width: 60px; }
+      width: 60px;
+      top: 0px;
+      background-color: #F5F5F5; }
 
 @media (max-width: 992px) {
   #main-manu {
@@ -121,6 +122,8 @@
           border: none; } }
 
 @media (max-width: 768px) {
+  #jssor_1 {
+    top: 50px; }
   #main-manu {
     height: 50px;
     background: #FFFFFF; }
@@ -141,7 +144,8 @@
           height: 50px;
           line-height: 50px;
           padding-left: 0px;
-          padding-right: 0px; }
+          padding-right: 0px;
+          float: none; }
           #main-manu .menu-wrapper .menu-container .Li a {
             border: none; }
             #main-manu .menu-wrapper .menu-container .Li a:hover {
@@ -156,26 +160,386 @@
   /* Logo */ }
 
 body {
-  background-color: lightgray; }
+  background-color: #FFFFFF; }
 
-.carousel-caption {
+#jssor_1 {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  width: 1300px;
+  height: 500px;
+  overflow: hidden;
+  visibility: hidden; }
+
+.carousel-indicators {
+  z-index: 1; }
+  .carousel-indicators li {
+    width: 50px;
+    width: 50px;
+    border-radius: initial;
+    background-color: #FFFFFF;
+    border: none; }
+  .carousel-indicators .active {
+    width: 50px;
+    width: 50px;
+    border-radius: initial;
+    background-color: #5DC5C5;
+    border: none; }
+
+#myCarousel .fill {
+  padding-top: 50px;
+  padding-left: 50px; }
+  #myCarousel .fill h1 {
+    margin: 0px; }
+
+#myCarousel .carousel-caption {
   display: none; }
 
-.carousel-indicators li {
-  width: 50px;
-  width: 50px;
-  border-radius: initial;
+.sec-1 {
+  text-align: center;
   background-color: #FFFFFF;
-  border: none; }
+  padding: 50px 10px; }
+  .sec-1 p {
+    font-size: 16px; }
 
-.carousel-indicators .active {
-  width: 50px;
-  width: 50px;
-  border-radius: initial;
-  background-color: #5DC5C5;
-  border: none; }
+.sec-2 {
+  background-color: #FFFFFF; }
+  .sec-2 .media-list {
+    background-color: #F4F4F4; }
+    .sec-2 .media-list .media-left {
+      width: 50%; }
+      .sec-2 .media-list .media-left img {
+        width: 100%; }
+    .sec-2 .media-list .media-body {
+      width: 50%;
+      padding: 14px 10px; }
+      .sec-2 .media-list .media-body h4 {
+        font-weight: bold; }
+
+.sec-3 {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-color: green;
+  background-size: 115% 100%;
+  background-color: #FFFFFF;
+  background-image: url("../images/skin-care.jpg");
+  clear: both; }
+  .sec-3 .row .injectable-services-1 {
+    height: 400px; }
+    .sec-3 .row .injectable-services-1 .inject {
+      visibility: visible; }
+  .sec-3 .row .injectable-services-2 {
+    height: 400px; }
+    .sec-3 .row .injectable-services-2 .inject {
+      visibility: hidden; }
+
+.sec-4 {
+  height: 400px;
+  background-color: #FFFFFF;
+  clear: both; }
+  .sec-4 .row .injectable-services-1 {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #FFFFFF;
+    background-image: url("../images/skin-care-3.jpg"); }
+    .sec-4 .row .injectable-services-1 .inject {
+      /*display: none;*/ }
+  .sec-4 .row .injectable-services-2 {
+    /*height: 400px;
+
+            .inject {
+                display: block;
+            }*/ }
+
+.sec-5 {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-color: green;
+  background-size: 115% 100%;
+  background-color: #FFFFFF;
+  background-image: url("../images/Dollarphotoclub.jpg");
+  clear: both; }
+  .sec-5 .row .injectable-services-1 {
+    height: 400px; }
+    .sec-5 .row .injectable-services-1 .inject {
+      visibility: visible; }
+  .sec-5 .row .injectable-services-2 {
+    height: 400px; }
+    .sec-5 .row .injectable-services-2 .inject {
+      visibility: hidden; }
+
+.sec-6 {
+  height: 400px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 110% 110%;
+  background-color: #FFFFFF;
+  background-image: url("../images/facial.jpg");
+  clear: both; }
+  .sec-6 .row .injectable-services-1 {
+    height: 400px; }
+    .sec-6 .row .injectable-services-1 .inject {
+      /*display: none;*/ }
+  .sec-6 .row .injectable-services-2 {
+    /*height: 400px;
+
+            .inject {
+                display: block;
+            }*/ }
+
+.sec-8 {
+  background-color: #FFFFFF; }
+  .sec-8 img {
+    width: 100%;
+    height: 400px; }
+  .sec-8 .media-heading {
+    font-weight: bold; }
+  .sec-8 .media-right {
+    text-align: center; }
+    .sec-8 .media-right a {
+      width: 127px;
+      background: #5DC5C5;
+      color: white;
+      padding: 10px 0px; }
+
+.sec-9 {
+  text-align: center;
+  background-color: #FFFFFF; }
+  .sec-9 .input-group {
+    width: 400px;
+    margin: 0 auto; }
+    .sec-9 .input-group input {
+      height: 50px; }
+    .sec-9 .input-group .input-group-addon {
+      background: #5DC5C5;
+      color: white;
+      border: none;
+      border-radius: inherit; }
+
+.sec-10 {
+  background-color: #FFFFFF; }
+  .sec-10 .vector {
+    background-image: url("../images/vector-assets.png");
+    background-repeat: no-repeat;
+    height: 70px; }
+    .sec-10 .vector:nth-child(1) {
+      background-position: 9px -187px; }
+    .sec-10 .vector:nth-child(2) {
+      background-position: -127px -187px; }
+    .sec-10 .vector:nth-child(3) {
+      background-position: -254px -187px; }
+    .sec-10 .vector:nth-child(4) {
+      background-position: -378px -187px; }
+    .sec-10 .vector:nth-child(5) {
+      background-image: none; }
+      .sec-10 .vector:nth-child(5) div {
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: -80px;
+        background-image: url("../images/vector-assets.png");
+        background-repeat: no-repeat;
+        background-position: -524px -178px; }
+    .sec-10 .vector:nth-child(6) {
+      background-position: -15px -275px; }
+    .sec-10 .vector:nth-child(7) {
+      background-position: -131px -279px; }
+    .sec-10 .vector:nth-child(8) {
+      background-position: -246px -276px; }
+    .sec-10 .vector:nth-child(9) {
+      background-position: -382px -276px; }
+
+.sec-11 {
+  border-top: 5px solid lightgrey;
+  /* color thme start */
+  /* color thme end */ }
+  .sec-11 #footer-wrapper {
+    width: 100%;
+    height: 30px;
+    clear: both;
+    box-sizing: border-box; }
+  .sec-11 #footer-wrapper .footer-container {
+    width: 95%;
+    height: inherit;
+    margin: 0 auto;
+    clear: both;
+    box-sizing: border-box; }
+  .sec-11 #footer-wrapper .footer-container div {
+    float: left;
+    width: 50%;
+    height: 30px;
+    box-sizing: border-box; }
+  .sec-11 #footer-wrapper .footer-container div:last-child {
+    text-align: right; }
+  .sec-11 #footer-wrapper .footer-container div p {
+    line-height: 30px;
+    font-size: 13px; }
+  .sec-11 #footer-wrapper {
+    background: #FFFFFF; }
+  .sec-11 #footer-wrapper .footer-container div:last-child a {
+    color: lightgrey;
+    font-weight: bold; }
+  .sec-11 #footer-wrapper .footer-container div p {
+    color: lightgrey; }
+  @media (max-width: 768px) {
+    .sec-11 #footer-wrapper {
+      height: auto; }
+    .sec-11 #footer-wrapper .footer-container {
+      width: 100%; }
+    .sec-11 #footer-wrapper .footer-container div {
+      float: none;
+      width: 100%;
+      text-align: center !important;
+      height: auto; }
+    .sec-11 #footer-wrapper .footer-container div p {
+      margin: 0px; } }
+
+@media (max-width: 992px) {
+  .sec-2 .media-list {
+    height: auto; }
+    .sec-2 .media-list .media-left img {
+      height: auto; }
+    .sec-2 .media-list .media-body {
+      width: 50%;
+      padding: 14px 10px; }
+      .sec-2 .media-list .media-body h4 {
+        font-weight: bold; }
+  .sec-3 {
+    background-image: none;
+    height: auto; }
+    .sec-3 .row .injectable-services-1 {
+      height: 400px;
+      background-repeat: no-repeat;
+      background-color: green;
+      background-size: 115% 100%;
+      background-color: #FFFFFF;
+      background-image: url("../images/skin-care.jpg"); }
+      .sec-3 .row .injectable-services-1 .inject {
+        visibility: hidden; }
+    .sec-3 .row .injectable-services-2 {
+      text-align: center;
+      height: auto;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+      .sec-3 .row .injectable-services-2 .inject {
+        visibility: visible; }
+  .sec-4 {
+    height: auto; }
+    .sec-4 .row .injectable-services-1 .inject {
+      display: none; }
+    .sec-4 .row .injectable-services-2 {
+      text-align: center;
+      background-color: #FFFFFF; }
+      .sec-4 .row .injectable-services-2 .inject {
+        display: block; }
+  .sec-5 {
+    background-image: none;
+    height: auto; }
+    .sec-5 .row .injectable-services-1 {
+      padding-right: 0px;
+      height: 400px;
+      padding-right: 0px;
+      background-repeat: no-repeat;
+      background-color: green;
+      background-size: 115% 100%;
+      background-color: #FFFFFF;
+      background-image: url("../images/Dollarphotoclub.jpg"); }
+      .sec-5 .row .injectable-services-1 .inject {
+        visibility: hidden; }
+    .sec-5 .row .injectable-services-2 {
+      text-align: center;
+      height: auto;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+      .sec-5 .row .injectable-services-2 .inject {
+        visibility: visible; }
+  .sec-6 {
+    height: auto; }
+    .sec-6 .row .injectable-services-1 .inject {
+      display: none; }
+    .sec-6 .row .injectable-services-2 {
+      text-align: center;
+      background-color: #FFFFFF; }
+      .sec-6 .row .injectable-services-2 .inject {
+        display: block; }
+  .sec-10 {
+    display: none; } }
 
 @media (max-width: 768px) {
   #myCarousel {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  #main-manu {
+    position: absolute;
+    z-index: 1; }
+  #jssor_1 {
+    top: 50px;
+    margin: 0px; }
+  .sec-1 {
+    margin-top: 50px; }
+  .sec-3 {
+    background-image: none;
+    height: auto; }
+    .sec-3 .row .injectable-services-1 {
+      height: 400px;
+      background-repeat: no-repeat;
+      background-color: green;
+      background-size: 115% 100%;
+      background-color: #FFFFFF;
+      background-image: url("../images/skin-care.jpg"); }
+      .sec-3 .row .injectable-services-1 .inject {
+        visibility: hidden; }
+    .sec-3 .row .injectable-services-2 {
+      text-align: center;
+      height: auto;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+      .sec-3 .row .injectable-services-2 .inject {
+        visibility: visible; }
+  .sec-4 {
+    height: auto; }
+    .sec-4 .row .injectable-services-1 .inject {
+      display: none; }
+    .sec-4 .row .injectable-services-2 {
+      text-align: center;
+      background-color: #FFFFFF; }
+      .sec-4 .row .injectable-services-2 .inject {
+        display: block; }
+  .sec-5 {
+    background-image: none;
+    height: auto; }
+    .sec-5 .row .injectable-services-1 {
+      height: 400px;
+      padding-right: 0px;
+      background-repeat: no-repeat;
+      background-color: green;
+      background-size: 115% 100%;
+      background-color: #FFFFFF;
+      background-image: url("../images/Dollarphotoclub.jpg"); }
+      .sec-5 .row .injectable-services-1 .inject {
+        visibility: hidden; }
+    .sec-5 .row .injectable-services-2 {
+      text-align: center;
+      height: auto;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+      .sec-5 .row .injectable-services-2 .inject {
+        visibility: visible; }
+  .sec-6 {
+    height: auto;
+    background-image: none; }
+    .sec-6 .row .injectable-services-1 {
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: url("../images/facial.jpg"); }
+      .sec-6 .row .injectable-services-1 .inject {
+        display: none; }
+    .sec-6 .row .injectable-services-2 {
+      text-align: center;
+      background-color: #FFFFFF; }
+      .sec-6 .row .injectable-services-2 .inject {
+        display: block; }
+  .sec-10 {
+    display: none; } }
 

@@ -9,6 +9,90 @@
     <link href="assets/css/style.min.css" rel="stylesheet" />
     <!--<link href="assets/plugin/slider/full-slider.css" rel="stylesheet" />-->
     <link href="assets/plugin/slider/half-slider.css" rel="stylesheet" />
+
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('img/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .jssorb05 div {
+                background-position: -7px -7px;
+            }
+
+                .jssorb05 div:hover, .jssorb05 .av:hover {
+                    background-position: -37px -7px;
+                }
+
+            .jssorb05 .av {
+                background-position: -67px -7px;
+            }
+
+            .jssorb05 .dn, .jssorb05 .dn:hover {
+                background-position: -97px -7px;
+            }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+
+        .jssora22l {
+            background-position: -10px -31px;
+        }
+
+        .jssora22r {
+            background-position: -70px -31px;
+        }
+
+        .jssora22l:hover {
+            background-position: -130px -31px;
+        }
+
+        .jssora22r:hover {
+            background-position: -190px -31px;
+        }
+
+        .jssora22l.jssora22ldn {
+            background-position: -250px -31px;
+        }
+
+        .jssora22r.jssora22rdn {
+            background-position: -310px -31px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -44,55 +128,372 @@
 
 
 
-    <div  style="width:100px; height:1px; clear:both;"></div>
-    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            
-        </ol>
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image: url('assets/images/Wayzata Medical Spa Header.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image: url('assets/images/Wayzata Medical Spa Header.jpg');"></div>
-                
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image: url('assets/images/Wayzata Medical Spa Header.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
-                </div>
-            </div>
-           
-          
+    <div id="jssor_1" style="">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-    <!-- header-ends -->
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="assets/images/Wayzata Medical Spa Header.jpg" />
+                <div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #5DC5C5; line-height: 60px;">FULL SERVICE MEDICAL SPA</div>
+                <div style="position: absolute; top: 85px; left: 30px; width: 480px; height: 120px; font-size: 16px; color: grey; line-height: 25px;">
+                    Offers premium skin care services including Botox + laser hair
+                    removal in the Minneapolis Area
+                </div>
+                <a style="position: absolute; top: 174px; left: 30px; padding:8px 25px; font-size: 16px; color: #ffffff; line-height: 25px; background-color:#5DC5C5;">Schedule a complimentary evaluation</a>
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+
+                </ol>
+
+            </div>
+            <!--<div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/purple.jpg" />
+            </div>
+            <a data-u="any" href="http://www.jssor.com" style="display:none">Full Width Slider</a>
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="img/blue.jpg" />
+            </div>-->
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+
+    <div class="container-fluid sec-1">
+        <div class="row">
+            <h1>Wayzata Medical Spa Offers Skin Care Services</h1>
+            <p>Leave our treatment center feeling pampered, rested and refreshed!</p>
+
+        </div>
+    </div>
+
+    <div class="container-fluid sec-2">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <ul class="media-list">
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object " src="assets/images/Dermal_Filler_Down1.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Contour Face</h4>
+                            <p>
+                                Non-surgically contour your
+                                face, treat deep wrinkles,
+                                and augment lips.
+                            </p>
+                            <a>View Details</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <ul class="media-list">
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object " src="assets/images/Chemical-Peels.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Skin Rejuvenation</h4>
+                            <p>
+                                Treat fine lines, uneven
+                                pigmentation, & acne.
+                            </p>
+                            <a>View Details</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <ul class="media-list">
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object " src="assets/images/c700x4202.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Skin Toning</h4>
+                            <p>
+                                Non-surgical skin toning and
+                                cellulite reduction for face
+                                and body.
+                            </p>
+                            <a>View Details</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid sec-3">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 injectable-services-1" style="padding:50px 20px;">
+                <div class="inject">
+                    <h1>Injectable Services</h1>
+                    <p>
+                        A combination of aesthetic injectables are used to nonsurgically
+                        contour the face, treat deep wrinkles, and define
+                        and augment lips. Enjoy immediate results with minimal
+                        downtime.
+                    </p>
+                    <a>Learn more Injectable Services</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 injectable-services-2">
+                <div class="inject">
+                    <h1>Injectable Services</h1>
+                    <p>
+                        A combination of aesthetic injectables are used to nonsurgically
+                        contour the face, treat deep wrinkles, and define
+                        and augment lips. Enjoy immediate results with minimal
+                        downtime.
+                    </p>
+                    <a>Learn more Injectable Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid sec-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 injectable-services-1" style="padding:50px 20px;">
+<img src="assets/" />
+            </div>
+            <div class="col-lg-6 col-md-12 injectable-services-2" style="padding:50px 20px;">
+                <div class="inject">
+                    <h1>Skin Resurfacing</h1>
+                    <p>
+                        If aging, acne, or too much time in the sun has left your face
+                        with blotches, scars, wrinkles, or lines, radio frequency skin
+                        resurfacing may help your skin look younger and healthier.
+                        Fractional resurfacing with minimal downtime!
+                    </p>
+                    <a>Learn more about Skin Resurfacing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid sec-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 injectable-services-1" style="padding:50px 20px;">
+                <div class="inject">
+                    <h1>
+                        Non-Surgical
+                        Body Contouring
+                    </h1>
+                    <p>
+                        Venus Legacy is the latest in face tightening, body contouring
+                        and toning, and cellulite reduction technologies. This is
+                        a non-invasive procedure that requires no surgery, no
+                        downtime, and no surgical scars.
+                    </p>
+                    <a>Learn more about Body Contouring</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 injectable-services-2">
+                <!--<img src="assets/images/VL_Logo_4C.png" />-->
+                <div class="inject">
+                    <h1>Injectable Services</h1>
+                    <p>
+                        A combination of aesthetic injectables are used to nonsurgically
+                        contour the face, treat deep wrinkles, and define
+                        and augment lips. Enjoy immediate results with minimal
+                        downtime.
+                    </p>
+                    <a>Learn more Injectable Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid sec-6">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 injectable-services-1" style="padding:50px 20px;">
+
+            </div>
+            <div class="col-lg-6 col-md-12 injectable-services-2" style="padding:50px 20px;">
+                <div class="inject">
+                    <h1>Massage + Spa Services</h1>
+                    <p>
+                        Restore what the stresses of modern life take away! Choose
+                        from a variety of massage and facial options that will leave
+                        you feeling pampered and refreshed.
+                    </p>
+                    <a>Learn more about Skin Resurfacing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid sec-8">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 injectable-services-1">
+                <img  src="assets/images/iStock_000020522977Large.jpg" />
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Injectable services before and after photos!</h4>
+                        <p>
+                            See the amazing transformation of actual
+                            patients! See how a variety of formulations were
+                            utilized for a total facial rejuvenation.
+                        </p>
+                      
+                    </div>
+                    <div class="media-right ">
+                        <a href="#" class="media-object">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-6 col-md-12 injectable-services-2">
+                <img src="assets/images/131_3756x2872_300dpi_all-free-download.com_6349627.jpg" />
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Looking stressed out lately?</h4>
+                        <p>
+                            Our aesthetic staff can create a customized
+                            beauty treatment for your skin including skin
+                            resurfacing, body contouring and laser.
+                        </p>
+
+                    </div>
+                    <div class="media-right ">
+                        <a href="#" class="media-object">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid sec-9">
+        <div class="row">
+            <h1>Sign up for spa treatment promotions, news, & events.</h1>
+            <br />
+            <br />
+            <div class="input-group ">
+                <input type="text" class="form-control" placeholder="Enter email address" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">Sign Up</span>
+            </div>
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container-fluid sec-10">
+        <div class="row">
+            <div class="col-lg-1 col-sm-1 vector"></div>
+            <div class="col-lg-1 col-sm-1 vector"></div>
+            <div class="col-lg-1 col-sm-1 vector"></div>
+            <div class="col-lg-1 col-sm-1 vector"></div>
+            <div class="col-lg-4 col-sm-4 vector">
+                <div></div>
+            </div>
+            <div class="col-lg-1 col-sm-1 vector"></div>
+            <div class="col-lg-1 col-sm-1 vector"></div>
+            <div class="col-lg-1 col-sm-1 vector"></div>
+            <div class="col-lg-1 col-sm-1 vector"></div>
+           
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="container-fluid sec-11">
+        <div id="footer-wrapper">
+            <div class="footer-container">
+                <div class="copy-right" style="width:70%;"><p>© WAYZATA MEDICAL SPA 2016 | <span style="color:#5DC5C5;">317 WAYZATA BLVD EAST. WAYZATA, MN 55391 | (952) 473-1111</span></p></div>
+                <div class="developed-by" style="width:30%;">
+                    <div style="background-image:url('assets/images/vector-assets.png'); height:50px; width:50px; background-repeat: no-repeat; background-position: -205px -35px;"></div>
+                    <div style="background-image:url('assets/images/vector-assets.png'); height:50px; width:50px; background-repeat: no-repeat; background-position: -270px  -35px;"></div>
+                    <div style="background-image:url('assets/images/vector-assets.png'); height:50px; width:50px; background-repeat: no-repeat; background-position: -335px -35px;"></div>
+                    <div style="background-image:url('assets/images/vector-assets.png'); height:50px; width:50px; background-repeat: no-repeat; background-position: -401px -35px;"></div>
+                </div>
+          
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
     <script src="assets/plugin/jquery/jquery.js"></script>
     <script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jssor.slider.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{ b: -1, d: 1, o: -1 }, { b: 0, d: 1000, o: 1 }],
+              [{ b: 1900, d: 2000, x: -379, e: { x: 7 } }],
+              [{ b: 1900, d: 2000, x: -379, e: { x: 7 } }],
+              [{ b: -1, d: 1, o: -1, r: 288, sX: 9, sY: 9 }, { b: 1000, d: 900, x: -1400, y: -660, o: 1, r: -288, sX: -9, sY: -9, e: { r: 6 } }, { b: 1900, d: 1600, x: -200, o: -1, e: { x: 16 } }]
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: true,
+                $SlideDuration: 800,
+                $SlideEasing: $Jease$.$OutQuint,
+                $CaptionSliderOptions: {
+                    $Class: $JssorCaptionSlideo$,
+                    $Transitions: jssor_1_SlideoTransitions
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+
+    </script>
 </body>
 </html>
