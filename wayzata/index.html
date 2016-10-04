@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="assets/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/style.min.css" rel="stylesheet" />
+    <!--<link href="assets/css/style.min.css" rel="stylesheet" />-->
     <!--<link href="assets/plugin/slider/full-slider.css" rel="stylesheet" />-->
     <link href="assets/plugin/slider/half-slider.css" rel="stylesheet" />
-
+    <link href="assets/plugin/animate/animate.css" rel="stylesheet" />
+    <link href="assets/plugin/zoom/zoomove.min.css" rel="stylesheet" />
+    <link href="assets/plugin/thumnail-slider/thumbs2.css" rel="stylesheet" />
+    <link href="assets/plugin/thumnail-slider/thumbnail-slider.css" rel="stylesheet" />
+    <link href="assets/plugin/animate2/animate2.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
     <style>
         /* jssor slider bullet navigator skin 05 css */
         /*
@@ -19,35 +24,17 @@
         .jssorb05 .av:hover     (active mouseover)
         .jssorb05 .dn           (mousedown)
         */
-        .jssorb05 {
-            position: absolute;
-        }
+        .jssorb05 { position: absolute; }
 
-            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-                position: absolute;
-                /* size of bullet elment */
-                width: 16px;
-                height: 16px;
-                background: url('img/b05.png') no-repeat;
-                overflow: hidden;
-                cursor: pointer;
-            }
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av { position: absolute; /* size of bullet elment */ width: 16px; height: 16px; background: url('img/b05.png') no-repeat; overflow: hidden; cursor: pointer; }
 
-            .jssorb05 div {
-                background-position: -7px -7px;
-            }
+            .jssorb05 div { background-position: -7px -7px; }
 
-                .jssorb05 div:hover, .jssorb05 .av:hover {
-                    background-position: -37px -7px;
-                }
+                .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
 
-            .jssorb05 .av {
-                background-position: -67px -7px;
-            }
+            .jssorb05 .av { background-position: -67px -7px; }
 
-            .jssorb05 .dn, .jssorb05 .dn:hover {
-                background-position: -97px -7px;
-            }
+            .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
         /* jssor slider arrow navigator skin 22 css */
         /*
@@ -58,40 +45,19 @@
         .jssora22l.jssora22ldn      (mousedown)
         .jssora22r.jssora22rdn      (mousedown)
         */
-        .jssora22l, .jssora22r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 40px;
-            height: 58px;
-            cursor: pointer;
-            background: url('img/a22.png') center center no-repeat;
-            overflow: hidden;
-        }
+        .jssora22l, .jssora22r { display: block; position: absolute; /* size of arrow element */ width: 40px; height: 58px; cursor: pointer; background: url('img/a22.png') center center no-repeat; overflow: hidden; }
 
-        .jssora22l {
-            background-position: -10px -31px;
-        }
+        .jssora22l { background-position: -10px -31px; }
 
-        .jssora22r {
-            background-position: -70px -31px;
-        }
+        .jssora22r { background-position: -70px -31px; }
 
-        .jssora22l:hover {
-            background-position: -130px -31px;
-        }
+        .jssora22l:hover { background-position: -130px -31px; }
 
-        .jssora22r:hover {
-            background-position: -190px -31px;
-        }
+        .jssora22r:hover { background-position: -190px -31px; }
 
-        .jssora22l.jssora22ldn {
-            background-position: -250px -31px;
-        }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
 
-        .jssora22r.jssora22rdn {
-            background-position: -310px -31px;
-        }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
     </style>
 </head>
 <body>
@@ -137,12 +103,12 @@
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
             <div data-p="225.00" style="display: none;">
                 <img data-u="image" src="assets/images/Wayzata Medical Spa Header.jpg" />
-                <div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #5DC5C5; line-height: 60px;">FULL SERVICE MEDICAL SPA</div>
-                <div style="position: absolute; top: 85px; left: 30px; width: 480px; height: 120px; font-size: 16px; color: grey; line-height: 25px;">
+                <div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #5DC5C5; line-height: 60px; font-family:OpenSans-Light;">FULL SERVICE MEDICAL SPA</div>
+                <div style="position: absolute; top: 85px; left: 30px; width: 480px; height: 120px; font-size: 16px; color: grey; line-height: 25px;font-family:OpenSans-Light;">
                     Offers premium skin care services including Botox + laser hair
                     removal in the Minneapolis Area
                 </div>
-                <a style="position: absolute; top: 174px; left: 30px; padding:8px 25px; font-size: 16px; color: #ffffff; line-height: 25px; background-color:#5DC5C5;">Schedule a complimentary evaluation</a>
+                <a style="position: absolute; top: 174px; left: 30px; padding:8px 25px; font-size: 16px; color: #ffffff; line-height: 25px; background-color:#5DC5C5;font-family:OpenSans-Light;">Schedule a complimentary evaluation</a>
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -179,7 +145,7 @@
 
     <div class="container-fluid sec-2">
         <div class="row">
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 " data-appear-top-offset="-200" data-animated="fadeInLeft">
                 <ul class="media-list">
                     <li class="media">
                         <div class="media-left">
@@ -199,12 +165,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-4 col-sm-12" data-appear-top-offset="-200" data-animated="fadeInUp">
                 <ul class="media-list">
                     <li class="media">
                         <div class="media-left">
+
                             <a href="#">
                                 <img class="media-object " src="assets/images/Chemical-Peels.jpg" alt="...">
+                                <!--<figure class="zoo-item" data-zoo-over="true" data-zoo-move="false" data-zoo-image="assets/images/Chemical-Peels.jpg">Loading...</figure>-->
                             </a>
                         </div>
                         <div class="media-body">
@@ -218,7 +186,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-4 col-sm-12" data-appear-top-offset="-200" data-animated="fadeInRight">
                 <ul class="media-list">
                     <li class="media">
                         <div class="media-left">
@@ -242,41 +210,43 @@
         </div>
     </div>
 
-    <div class="container-fluid sec-3">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 injectable-services-1" style="padding:50px 20px;">
-                <div class="inject">
-                    <h1>Injectable Services</h1>
-                    <p>
-                        A combination of aesthetic injectables are used to nonsurgically
-                        contour the face, treat deep wrinkles, and define
-                        and augment lips. Enjoy immediate results with minimal
-                        downtime.
-                    </p>
-                    <a>Learn more Injectable Services</a>
+
+    <div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+        <div class="container-fluid sec-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 injectable-services-1" style="padding:50px 20px;">
+                    <div class="inject">
+                        <h1>Injectable Services</h1>
+                        <p>
+                            A combination of aesthetic injectables are used to nonsurgically
+                            contour the face, treat deep wrinkles, and define
+                            and augment lips. Enjoy immediate results with minimal
+                            downtime.
+                        </p>
+                        <a>Learn more Injectable Services</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-12 injectable-services-2">
-                <div class="inject">
-                    <h1>Injectable Services</h1>
-                    <p>
-                        A combination of aesthetic injectables are used to nonsurgically
-                        contour the face, treat deep wrinkles, and define
-                        and augment lips. Enjoy immediate results with minimal
-                        downtime.
-                    </p>
-                    <a>Learn more Injectable Services</a>
+                <div class="col-lg-6 col-md-6 col-sm-12 injectable-services-2">
+                    <div class="inject">
+                        <h1>Injectable Services</h1>
+                        <p>
+                            A combination of aesthetic injectables are used to nonsurgically
+                            contour the face, treat deep wrinkles, and define
+                            and augment lips. Enjoy immediate results with minimal
+                            downtime.
+                        </p>
+                        <a>Learn more Injectable Services</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container-fluid sec-4">
+    <div class="container-fluid sec-4 ">
         <div class="row">
-            <div class="col-lg-6 col-md-12 injectable-services-1" style="padding:50px 20px;">
-<img src="assets/" />
+            <div class="col-lg-6 col-md-6 col-sm-12 injectable-services-1" style="padding:50px 20px;" data-appear-top-offset="-200" data-animated="fadeInLeft">
+
             </div>
-            <div class="col-lg-6 col-md-12 injectable-services-2" style="padding:50px 20px;">
+            <div class="col-lg-6 col-md-6 col-sm-12 injectable-services-2" style="padding:50px 20px;" data-appear-top-offset="-200" data-animated="fadeInRight">
                 <div class="inject">
                     <h1>Skin Resurfacing</h1>
                     <p>
@@ -293,7 +263,7 @@
 
     <div class="container-fluid sec-5">
         <div class="row">
-            <div class="col-lg-6 col-md-12 injectable-services-1" style="padding:50px 20px;">
+            <div class="col-lg-6 col-md-6 col-sm-12 injectable-services-1" style="padding:50px 20px;" data-appear-top-offset="-200" data-animated="fadeInLeft">
                 <div class="inject">
                     <h1>
                         Non-Surgical
@@ -308,7 +278,7 @@
                     <a>Learn more about Body Contouring</a>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 injectable-services-2">
+            <div class="col-lg-6 col-md-6 col-sm-12 injectable-services-2">
                 <!--<img src="assets/images/VL_Logo_4C.png" />-->
                 <div class="inject">
                     <h1>Injectable Services</h1>
@@ -326,10 +296,10 @@
 
     <div class="container-fluid sec-6">
         <div class="row">
-            <div class="col-lg-6 col-md-12 injectable-services-1" style="padding:50px 20px;">
+            <div class="col-lg-6 col-md-6 col-sm-12 injectable-services-1" style="padding:50px 20px;">
 
             </div>
-            <div class="col-lg-6 col-md-12 injectable-services-2" style="padding:50px 20px;">
+            <div class="col-lg-6 col-md-6 col-sm-12  injectable-services-2" style="padding:50px 20px;" data-appear-top-offset="-200" data-animated="fadeInRight">
                 <div class="inject">
                     <h1>Massage + Spa Services</h1>
                     <p>
@@ -343,10 +313,47 @@
         </div>
     </div>
 
+    <div class="container-fluid sec-12 " >
+       
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 injectable-services-1" style="padding:0px ; ">
+                <div style="padding:200px 0; background-image:url('assets/images/chandelier-office.jpg');">
+                    <div id="thumbnail-slider">
+                        <div class="inner">
+                            <ul>
+                                <li>
+                                    <a class="thumb" href="assets/images/screen568x568.jpeg"></a>
+                                </li>
+                                <li>
+                                    <a class="thumb" href="assets/images/logo-medium.png"></a>
+                                </li>
+                                <li>
+                                    <a class="thumb" href="assets/images/Sciton-logo-transparent.png"></a>
+                                </li>
+                                <li>
+                                    <a class="thumb" href="assets/images/asclera-logo-in-Los-Angeles-copy-1024x330.png"></a>
+                                </li>
+                                <li>
+                                    <a class="thumb" href="assets/images/eltamd.png"></a>
+                                </li>
+                                <li>
+                                    <a class="thumb" href="assets/images/botox-logo.png"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container-fluid sec-8">
         <div class="row">
-            <div class="col-lg-6 col-md-12 injectable-services-1">
-                <img  src="assets/images/iStock_000020522977Large.jpg" />
+            <div class="col-lg-6 col-md-6 col-sm-12 injectable-services-1" data-appear-right-offset="-400" data-animated="fadeInRight">
+                <img src="assets/images/iStock_000020522977Large.jpg" />
                 <div class="media">
                     <div class="media-body">
                         <h4 class="media-heading">Injectable services before and after photos!</h4>
@@ -355,7 +362,7 @@
                             patients! See how a variety of formulations were
                             utilized for a total facial rejuvenation.
                         </p>
-                      
+
                     </div>
                     <div class="media-right ">
                         <a href="#" class="media-object">
@@ -366,7 +373,7 @@
 
 
             </div>
-            <div class="col-lg-6 col-md-12 injectable-services-2">
+            <div class="col-lg-6 col-md-6 col-sm-12 injectable-services-2" data-appear-left-offset="-400" data-animated="fadeInLeft">
                 <img src="assets/images/131_3756x2872_300dpi_all-free-download.com_6349627.jpg" />
                 <div class="media">
                     <div class="media-body">
@@ -390,7 +397,12 @@
         </div>
     </div>
 
-
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div class="container-fluid sec-9">
         <div class="row">
             <h1>Sign up for spa treatment promotions, news, & events.</h1>
@@ -409,42 +421,74 @@
     <br />
     <div class="container-fluid sec-10">
         <div class="row">
-            <div class="col-lg-1 col-sm-1 vector"></div>
-            <div class="col-lg-1 col-sm-1 vector"></div>
-            <div class="col-lg-1 col-sm-1 vector"></div>
-            <div class="col-lg-1 col-sm-1 vector"></div>
-            <div class="col-lg-4 col-sm-4 vector">
+            <div class="col-lg-5 col-md-12 social-sec-1">
+                <div class="social-wrapper">
+                    <div class=" vector"></div>
+                    <div class=" vector"></div>
+                    <div class=" vector"></div>
+                    <div class=" vector"></div>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-12 social-sec-2">
+                <div class=" vector"></div>
+            </div>
+            <div class="col-lg-5 col-md-12 social-sec-3">
+                <div class="social-wrapper">
+                    <div class=" vector"></div>
+                    <div class=" vector"></div>
+                    <div class=" vector"></div>
+                    <div class=" vector"></div>
+                </div>
+            </div>
+
+            <!--<div class=" vector">
                 <div></div>
             </div>
             <div class="col-lg-1 col-sm-1 vector"></div>
             <div class="col-lg-1 col-sm-1 vector"></div>
             <div class="col-lg-1 col-sm-1 vector"></div>
-            <div class="col-lg-1 col-sm-1 vector"></div>
-           
+            <div class="col-lg-1 col-sm-1 vector"></div>-->
+
         </div>
     </div>
     <br />
     <br />
-    <div class="container-fluid sec-11">
-        <div id="footer-wrapper">
-            <div class="footer-container">
-                <div class="copy-right" style="width:70%;"><p>© WAYZATA MEDICAL SPA 2016 | <span style="color:#5DC5C5;">317 WAYZATA BLVD EAST. WAYZATA, MN 55391 | (952) 473-1111</span></p></div>
-                <div class="developed-by" style="width:30%;">
-                    <div style="background-image:url('assets/images/vector-assets.png'); height:50px; width:50px; background-repeat: no-repeat; background-position: -205px -35px;"></div>
-                    <div style="background-image:url('assets/images/vector-assets.png'); height:50px; width:50px; background-repeat: no-repeat; background-position: -270px  -35px;"></div>
-                    <div style="background-image:url('assets/images/vector-assets.png'); height:50px; width:50px; background-repeat: no-repeat; background-position: -335px -35px;"></div>
-                    <div style="background-image:url('assets/images/vector-assets.png'); height:50px; width:50px; background-repeat: no-repeat; background-position: -401px -35px;"></div>
+    <hr style="background-color:lightgray; height:10px;" />
+
+    <div class="container-fluid sec-13">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12 social-sec-1">
+                <div class="footer-left">
+                    © WAYZATA MEDICAL SPA 2016 | <span style="color:#5DC5C5;">317 WAYZATA BLVD EAST. WAYZATA, MN 55391 | (952) 473-1111 </span>
                 </div>
-          
-                </div>
-                
+
             </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-12 social-sec-3">
+                <div class="social-wrapper">
+                    <div class=" vector"></div>
+                    <div class=" vector"></div>
+                    <div class=" vector"></div>
+                    <div class=" vector"></div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
+
+    <br />
+
 
     <script src="assets/plugin/jquery/jquery.js"></script>
     <script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/jssor.slider.js"></script>
+    <script src="assets/plugin/animate/animate.js"></script>
+    <script src="assets/plugin/zoom/zoomove.min.js"></script>
+    <script src="assets/plugin/thumnail-slider/thumbnail-slider.js"></script>
+    <link href="assets/plugin/animate2/animate2.css" rel="stylesheet" />
     <script src="assets/js/script.js"></script>
 
     <script type="text/javascript">
@@ -494,6 +538,17 @@
             //responsive code end
         });
 
+    </script>
+
+    <script>
+        $('.zoo-item').ZooMove({
+            cursor: 'true',
+            scale: '1.2',
+        });
+    </script>
+
+    <script>
+        new WOW().init();
     </script>
 </body>
 </html>

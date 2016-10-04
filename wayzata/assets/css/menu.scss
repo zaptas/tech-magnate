@@ -2,11 +2,12 @@
 
 /*do not down main menu height you can up it  cause logo will not align properly */
 $header-height: 120px;
-$main-menu-height: 30px;
+$border-height: 4px;
+$main-menu-height: $border-height + 30px;
 
 $small-menu-height: 50px;
-$font-size:16px;
-
+$font-size: 16px;
+$border-height: 4px;
 
 $main-logo-size: 0 + ($header-height * 2);
 
@@ -17,28 +18,29 @@ $main-menu-background-color: $shade-1;
 $small-menu-background-color: $shade-1;
 
 
-#myCarousel{
- margin-top:120px;
-}
-#main-manu {
+
+
+#main-manu
+{
     width: 100%;
     height: $header-height;
     box-sizing: border-box;
     clear: both;
     background: $main-menu-background-color;
     display: flex;
-    position:absolute;
-    z-index:10;
-    clear:both;
-    
+    clear: both;
+    font-family:OpenSans-Light;
 
-    .menu-active {
+    .menu-active
+    {
         /*background-color: $main-menu-active-backgruond-color !important;
         color: $main-menu-active-color !important;*/
-        border-bottom: 4px solid $main-menu-active-color ;
+        border-bottom: border-height solid $main-menu-active-color;
+        border-color: $main-menu-active-color;
     }
 
-    .logo-wrapper {
+    .logo-wrapper
+    {
         padding: 0px;
         width: 400px;
         height: $header-height;
@@ -47,13 +49,15 @@ $small-menu-background-color: $shade-1;
         top: 50%;
         transform: translateY(-50%);
 
-        .logo-container {
+        .logo-container
+        {
             max-width: $main-logo-size;
             width: 100%;
             height: $header-height;
             margin: 0px auto;
 
-            img {
+            img
+            {
                 min-width: 0px;
                 max-width: $main-logo-size;
                 width: 100%;
@@ -64,7 +68,8 @@ $small-menu-background-color: $shade-1;
         }
     }
 
-    .menu-wrapper {
+    .menu-wrapper
+    {
         flex-grow: 1;
         height: $main-menu-height;
         width: auto;
@@ -74,7 +79,8 @@ $small-menu-background-color: $shade-1;
         top: 50%;
         transform: translateY(-50%);
 
-        .menu-container {
+        .menu-container
+        {
             min-width: 600px;
             max-width: 700px;
             width: 100%;
@@ -82,36 +88,48 @@ $small-menu-background-color: $shade-1;
             background-color: $shade-1;
             display: flex;
             box-sizing: border-box;
-            
-                float: right;
+            float: right;
 
-            .Li {
+            .Li
+            {
                 background-color: $shade-1;
                 box-sizing: border-box;
                 /*border-left: 1px solid black;*/
                 line-height: $main-menu-height;
                 padding-left: 2.5%;
                 padding-right: 2.5%;
+                flex-grow: 1;
 
-                a {
+
+                a
+                {
                     display: block;
                     text-decoration: none;
                     color: $shade-3;
-                    font-size:$font-size;
-                    &:hover {
+                    font-size: $font-size;
+                    height: $main-menu-height;
+                    @extend .menu-active;
+                    border-bottom-style: hidden;
+
+                    &:hover
+                    {
                         /*border-bottom: 4px solid $main-menu-active-color;*/
-                        @extend .menu-active;
+                        border-bottom-style: solid;
                     }
                 }
 
-                &:first-child {
+
+
+                &:first-child
+                {
                     border: none;
                 }
             }
         }
     }
 
-    .small-menu {
+    .small-menu
+    {
         display: none;
         height: $small-menu-height;
         background-color: $small-menu-background-color;
@@ -121,10 +139,12 @@ $small-menu-background-color: $shade-1;
         clear: both;
         width: 100%;
 
-        .small-menu-logo {
+        .small-menu-logo
+        {
             flex-grow: 1;
 
-            img {
+            img
+            {
                 min-width: 50px;
                 max-width: 70px;
                 position: relative;
@@ -135,7 +155,8 @@ $small-menu-background-color: $shade-1;
         }
 
 
-        span {
+        span
+        {
             font-size: 30px;
             line-height: $small-menu-height;
             font-size: 35px;
@@ -147,12 +168,15 @@ $small-menu-background-color: $shade-1;
 
 
 
-@media (max-width: 992px) {
-    #main-manu {
-        display: inline-block;
+@media (max-width: 992px)
+{
+    #main-manu
+    {
+        display: block;
         height: auto;
 
-        .logo-wrapper {
+        .logo-wrapper
+        {
             width: 100%;
             clear: both;
             position: static;
@@ -160,19 +184,23 @@ $small-menu-background-color: $shade-1;
             top: 0px;
         }
 
-        .menu-wrapper {
+        .menu-wrapper
+        {
             clear: both;
             position: static;
             transform: initial;
             top: 0px;
             padding-bottom: 50px;
 
-            .menu-container {
+            .menu-container
+            {
                 width: 100%;
-                float:initial;
-                margin:0 auto;
-                padding-left: 45px;
-                .Li {
+                float: initial;
+                margin: 0 auto;
+
+
+                .Li
+                {
                     border: none;
                 }
             }
@@ -181,54 +209,77 @@ $small-menu-background-color: $shade-1;
 }
 
 
-@media (max-width: 768px) {
-    #main-manu {
+@media (max-width: 768px)
+{
+    #main-manu
+    {
         height: $small-menu-height;
         background: $small-menu-background-color;
 
-        .logo-wrapper {
+        .logo-wrapper
+        {
             display: none;
         }
 
-        .menu-wrapper {
+        .menu-wrapper
+        {
             height: auto;
             display: none;
 
-            .menu-container {
+            .menu-container
+            {
                 display: inline-block;
                 max-width: 100%;
                 min-width: 100%;
                 height: auto;
                 padding-left: 0px;
-                .Li {
+
+                .Li
+                {
                     border: none;
                     /*border-bottom: 1px solid black;*/
                     height: $small-menu-height;
                     line-height: $small-menu-height;
                     padding-left: 0px;
-                    padding-right:0px;
+                    padding-right: 0px;
 
-                    a {
-                        border:none;
-                        &:hover {
-                            
-                            background-color:$main-menu-active-color;
-                            color:$shade-1;
+                    a
+                    {
+                        border: none !important;
+
+                        &:hover
+                        {
+                            background-color: $main-menu-active-color;
+                            color: $shade-1;
                         }
                     }
 
-                    &:first-child {
+                    &:hover
+                    {
+                        background-color: $main-menu-active-color;
+                        color: $shade-1 !important;
+
+                        a
+                        {
+                             color: $shade-1 !important;
+                        }
+                    }
+
+                    &:first-child
+                    {
                         /*border-bottom: 1px solid black;*/
                     }
 
-                    &:last-child {
+                    &:last-child
+                    {
                         border: none;
                     }
                 }
             }
         }
 
-        .small-menu {
+        .small-menu
+        {
             display: flex;
         }
     }
